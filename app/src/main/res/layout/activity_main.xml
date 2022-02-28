@@ -24,12 +24,12 @@
         android:layout_height="wrap_content"
         android:text="First Turn"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:backgroundTint="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:backgroundTint="#000000"
         app:layout_constraintVertical_bias="0.798" />
 
 
@@ -123,15 +123,16 @@
 
     <TextView
         android:id="@+id/txtCombatLog"
-        android:layout_width="0dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="285dp"
+        android:layout_height="16dp"
         android:text=""
         android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
 
     <TextView
         android:id="@+id/txtHeroName"
@@ -161,7 +162,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="196dp"
         android:layout_marginTop="312dp"
-        android:text="Skill1"
+        android:text="Skill"
+        android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

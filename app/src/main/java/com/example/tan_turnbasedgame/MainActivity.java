@@ -150,22 +150,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     break;
                 case R.id.imageButton3:
-                    switch (v.getId()) {
-
-                        case R.id.Skill1:
 
                             monsterHP = Math.max(0, monsterHP - 150);
                             turnNumber++;
                             txtMonsHP.setText(String.valueOf(monsterHP));
 
-                            txtLog.setText("" + String.valueOf(R.id.txtHeroName) + " used Burn! It dealt " + String.valueOf(150) + "! The enemy is burned for 5 turns.");
+                            txtLog.setText("" + String.valueOf(heroName) + " used Burn! It dealt " + String.valueOf(150) + "! The enemy is burned for 5 turns.");
                             btnNextTurn.setText("Your Turn (" + String.valueOf(turnNumber) + ")");
 
                             burnstatus = true;
                             burncounter = 4;
 
                             if (monsterHP == 0) {
-                                txtLog.setText("" + String.valueOf(txtHeroName) + " killed " + String.valueOf(txtMonsName) + "! You win.");
+                                txtLog.setText("" + String.valueOf(heroName) + " killed " + String.valueOf(monsName) + "! You win.");
                                 heroHP = 2000;
                                 monsterHP = 5000;
                                 turnNumber = 1;
@@ -177,6 +174,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                     }
             }
+
             private void enableFullscreen(){
                 View decorView = getWindow().getDecorView();
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -190,7 +188,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     );
                 }
             }
-        }
+
 }
 
 
